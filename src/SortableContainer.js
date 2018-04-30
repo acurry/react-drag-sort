@@ -23,7 +23,7 @@ const itemTarget = {
 @DropTarget(itemType, itemTarget, connectDropTarget)
 class SortableContainer extends React.Component {
   static propTypes = {
-    connectDropTarget: PropTypes.func.isRequired,
+    connectDropTarget: PropTypes.func,
     collection: PropTypes.array.isRequired,
     onChange: PropTypes.func.isRequired,
     Component: PropTypes.func.isRequired
